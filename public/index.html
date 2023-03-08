@@ -1,100 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>React App</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/reset.css" />
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <title>React App</title>
-</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="main">
+      <div class="play-section">
+        <div class="promo__title">
+          <h0>Play any audio sources directly in the browser!</h0>
+        </div>
+        <div id="root"></div>
 
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div class="main">
-    <div class="play-section">
-      <div class="promo">
-        <div class="promo__text">
-          <div>
-            <h0 class="promo__title">Play any audio sources directly in the browser!</h0>
-            <h3 class="promo__description">Without any restrictions for free</h3>
+        <div class="promo__terms">
+          <h3>Without any restrictions for free</h3>
+          <span
+            >By uploading the audio file, you agree to our <a href="#">Terms of Service.</a></span
+          >
+        </div>
+      </div>
+
+      <div class="how_wrapper">
+        <div class="how_block">
+          <h2>How It Works</h2>
+          <span>
+            Lorem Ipsum is a "fish" text often used in print and web design. Lorem Ipsum has been
+            the standard "fish" for Latin texts since the early 16th century. At that time, an
+            unnamed printer created a large collection of font sizes and shapes, using Lorem Ipsum
+            for print samples.</span
+          >
+        </div>
+        <div class="illustration">
+          <div class="left_side">
+            <div class="rectangle left"></div>
           </div>
-          <div class="promo__terms">
-            <span>By uploading the audio file, you agree to our</span>
-            <a href="#">Terms of Service.</a>
+          <div class="line-block_first"></div>
+          <div class="line-block_second"></div>
+          <div class="right_side">
+            <div class="rectangle right"><img src="./assets/img/aws.svg" /></div>
+            <div class="rectangle right"><img src="./assets/img/cloud.svg" /></div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="how_wrapper">
-      <div class="how_block">
-        <h2>How It Works</h2>
-        <span> Lorem Ipsum is a "fish" text often used in print and web design. Lorem Ipsum has been the standard "fish"
-          for Latin texts since the early 16th century. At that time, an unnamed printer created a large collection of
-          font sizes and shapes, using Lorem Ipsum for print samples.</span>
-      </div>
-      <div class="illustration">
-        <div class="left_side">
-          <div class="rectangle left"></div>
-        </div>
-        <div class="line-block_first"></div>
-        <div class="line-block_second"></div>
-        <div class="right_side">
-          <div class="rectangle right"><img src="./assets/img/aws.svg"></div>
-          <div class="rectangle right"><img src="./assets/img/cloud.svg"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="requirements">
-      <span>Technical requirements</span>
-      <div class="wrapper">
-        <input class="radio" id="one" name="group" type="radio" checked>
-        <input class="radio" id="two" name="group" type="radio">
-        <div class="tabs">
-          <label class="tab" id="one-tab" for="one"><span>Own server</span></label>
-          <label class="tab" id="two-tab" for="two"><span>Amazon Instance</span></label>
-        </div>
-        <div class="panels">
-          <div class="panel" id="one-panel">
-
-            <div class="table_content">
-              <div class="table_item"><span class="table_row_title">OS + apps</span><span>Unix/OSX + docker +
-                  nvidia-docker</span></div>
-              <div class="table_item"><span class="table_row_title">CPU</span><span>4 cores or more (e.g. intel core
-                  i5)</span></div>
-              <div class="table_item"><span class="table_row_title">Memory</span><span>16 GB RAM</span></div>
-              <div class="table_item"><span class="table_row_title">Free space</span><span>100 GB of free space</span>
+      <div class="requirements">
+        <span>Technical requirements</span>
+        <div class="wrapper">
+          <input class="radio" id="one" name="group" type="radio" checked />
+          <input class="radio" id="two" name="group" type="radio" />
+          <div class="tabs">
+            <label class="tab" id="one-tab" for="one"><span>Own server</span></label>
+            <label class="tab" id="two-tab" for="two"><span>Amazon Instance</span></label>
+          </div>
+          <div class="panels">
+            <div class="panel" id="one-panel">
+              <div class="table_content">
+                <div class="table_item">
+                  <span class="table_row_title">OS + apps</span
+                  ><span>Unix/OSX + docker + nvidia-docker</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">CPU</span
+                  ><span>4 cores or more (e.g. intel core i5)</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">Memory</span><span>16 GB RAM</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">Free space</span><span>100 GB of free space</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">Graphics hardware</span
+                  ><span>GPU: NVidia only 2Gb+</span>
+                </div>
               </div>
-              <div class="table_item"><span class="table_row_title">Graphics hardware</span><span>GPU: NVidia only
-                  2Gb+</span></div>
-
             </div>
-
-
+            <div class="panel" id="two-panel">
+              <div class="table_content">
+                <div class="table_item">
+                  <span class="table_row_title">Instance</span><span>g4dn.xlarge</span>
+                </div>
+                <div class="table_item"><span class="table_row_title">GPU</span><span>1</span></div>
+                <div class="table_item">
+                  <span class="table_row_title">vCPUs</span><span>4</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">Memory</span><span>16 GB RAM</span>
+                </div>
+                <div class="table_item">
+                  <span class="table_row_title">Storage</span><span>125 GB</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="panel" id="two-panel">
-
-            <div class="table_content">
-              <div class="table_item"><span class="table_row_title">Instance</span><span>g4dn.xlarge</span></div>
-              <div class="table_item"><span class="table_row_title">GPU</span><span>1</span></div>
-              <div class="table_item"><span class="table_row_title">vCPUs</span><span>4</span></div>
-              <div class="table_item"><span class="table_row_title">Memory</span><span>16 GB RAM</span></div>
-              <div class="table_item"><span class="table_row_title">Storage</span><span>125 GB</span></div>
-
-            </div>
-            <div class="table_content">
-
-            </div>
-
-          </div>
-
         </div>
-
       </div>
     </div>
-    <div id="root"></div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -105,6 +112,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+  </body>
 </html>

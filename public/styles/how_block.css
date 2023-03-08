@@ -10,7 +10,6 @@
 }
 
 .how_wrapper h2 {
-  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -21,7 +20,6 @@
 
 .how_wrapper span {
   margin-top: 40px;
-  font-family: 'Space Grotesk';
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
@@ -69,8 +67,8 @@
 }
 @media (max-width: 768px) {
   .rectangle.left {
-    width: 49px;
-    height: 49px;
+    width: 60px;
+    height: 60px;
   }
 }
 @media (max-width: 768px) {
@@ -79,8 +77,8 @@
     padding-bottom: 33px;
   }
   .rectangle.right {
-    width: 49px;
-    height: 49px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -101,6 +99,11 @@
 @media (max-width: 991px) {
   .line-block_second {
     width: 33%;
+  }
+}
+@media (max-width: 768px) {
+  img {
+    width: 44px;
   }
 }
 

@@ -1,9 +1,20 @@
 @import url(./requirements.css);
 @import url(./how_block.css);
+@import url(./play_block.css);
+
 body {
   background-color: #1b191c;
+  font-family: Space Grotesk, sans-serif;
 }
-
+#root {
+  align-items: center;
+  display: flex;
+  grid-column-end: span 2;
+  grid-column-start: 2;
+  grid-row-end: span 3;
+  grid-row-start: 1;
+  justify-content: center;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -11,64 +22,4 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
-}
-
-.play-section {
-  display: flex;
-  height: 490px;
-  padding: 40px;
-  margin: 12px;
-  background-color: #eeeeee;
-}
-@media (max-width: 991px) {
-  .play-section {
-    margin: 0;
-    padding: 12px;
-  }
-}
-.promo {
-  width: 492px;
-}
-
-.promo__text {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.promo__title {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 52px;
-  letter-spacing: -1px;
-  color: #000000;
-}
-
-.promo__description {
-  margin-top: 24px;
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.4px;
-  color: #1b191c;
-}
-
-.promo__terms {
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.3px;
-  color: #1b191c;
-}
-
-.promo__terms a {
-  text-decoration: none;
-  color: #1b191c;
 }
