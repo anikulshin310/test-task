@@ -35,12 +35,14 @@
     "no-shadow": "off",
     "object-curly-newline": "off",
     "prefer-promise-reject-errors": "off",
+    "import/no-extraneous-dependencies": "off",
     "react/function-component-definition": [
       "error",
       {
         "namedComponents": "arrow-function"
       }
     ],
+
     "react/jsx-filename-extension": [
       "error",
       {
@@ -51,6 +53,7 @@
     "react/jsx-wrap-multilines": "off",
     "react/require-default-props": "off"
   },
+
   "settings": {
     "import/resolver": {
       "typescript": {
