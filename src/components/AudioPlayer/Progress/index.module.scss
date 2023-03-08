@@ -1,0 +1,24 @@
+.progress_bar {
+  width: 100%;
+  input {
+    width: 100%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #adacad;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    background: #ffffff;
+    height: 12px;
+    width: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+.player_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 620px;
+  row-gap: 20px;
+  width: 100%;
+  a {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1b191c;
+    text-decoration: none;
+  }
+  .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background: #cfd3d6;
+    gap: 50px;
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}

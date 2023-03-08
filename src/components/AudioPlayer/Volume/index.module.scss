@@ -1,0 +1,23 @@
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 252px;
+  height: 2px;
+  background: #adacad;
+  margin: 0;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  background: #000;
+  width: 16px;
+  height: 12px;
+  cursor: pointer;
+}
+.slider_fill {
+  position: relative;
+  background-color: #000;
+  height: 2px;
+  top: -5px;
+}
